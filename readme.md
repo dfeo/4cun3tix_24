@@ -41,3 +41,7 @@ docker-compose ps
 
 Una vez iniciado, puedes acceder a la interfaz web en:
 `https://localhost:8443` (o el puerto que hayas configurado).
+
+### Credenciales por defecto
+- **Usuario:** `awvs@awvs.lan`
+- **Contraseña:** `Awvs@awvs.lan`
