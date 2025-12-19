@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  awvs:
+    image: daniel8812/acunetix:24
+    container_name: awvs
+    hostname: awvs.orb.local
+    ports:
+      - "${AWVS_PORT:-3443}:3443"
+    labels:
+      - "Github=https://github.com/XRSec/AWVS-Update"
+      - "mail=Jalapeno1868@outlook.com"
+      - "maintainer=xrsec"
+      - "org.opencontainers.image.ref.name=ubuntu"
+      - "org.opencontainers.image.source=https://github.com/XRSec/AWVS-Update"
+      - "org.opencontainers.image.title=AWVS-Update"
+      - "org.opencontainers.image.version=20.04"
+    restart: "no"
